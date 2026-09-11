@@ -31,4 +31,3 @@ jobs:
           name: Smart-Kisti-Manager-Windows-Setup
           path: dist/*.exe
           if-no-files-found: error
-   
