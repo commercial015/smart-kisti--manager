@@ -1,0 +1,34 @@
+SMART KISTI MANAGER v11 — Windows 11 Setup.exe তৈরি করার সবচেয়ে সহজ পদ্ধতি
+
+এই ভার্সনে GitHub Actions যোগ করা হয়েছে। আপনার Windows 11 PC-তে Node.js/npm দিয়ে build করার দরকার নেই।
+
+ধাপ ১ — GitHub
+1. github.com এ লগইন করুন।
+2. New repository তৈরি করুন। উদাহরণ: smart-kisti-manager
+3. এই ZIP Extract করুন।
+4. Extract করা সব ফাইল GitHub repository-তে Upload করুন।
+5. নিশ্চিত করুন যে package.json এবং .github/workflows/build-windows.yml repository-এর root-এ আছে।
+6. Commit changes দিন।
+
+ধাপ ২ — Build চালু করুন
+1. GitHub repository খুলুন।
+2. উপরের Actions ট্যাবে যান।
+3. বাম পাশে "Build Windows Installer" নির্বাচন করুন।
+4. "Run workflow" চাপুন।
+5. Build শেষ হওয়া পর্যন্ত অপেক্ষা করুন (সাধারণত কয়েক মিনিট)।
+
+ধাপ ৩ — Setup.exe ডাউনলোড
+1. Actions-এর সফল workflow run খুলুন।
+2. নিচে Artifacts অংশে যান।
+3. "Smart-Kisti-Manager-Windows-Installer" ZIP download করুন।
+4. ZIP Extract করুন।
+5. ভিতরে Windows Setup .exe পাবেন।
+6. Setup .exe → Double Click → Next → Install।
+
+এতে আপনার Windows 11-এ Desktop Shortcut সহ অ্যাপ ইনস্টল হবে।
+
+গুরুত্বপূর্ণ:
+- GitHub account দরকার।
+- Build করার সময় internet দরকার।
+- Windows Setup তৈরি হবে GitHub-এর Windows runner-এ।
+- ইনস্টল হওয়ার পরে Node.js/npm লাগবে না।

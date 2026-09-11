@@ -1,0 +1,20 @@
+SMART KISTI MANAGER v10.0
+==========================
+এটি সম্পূর্ণ Electron Windows Desktop Application project।
+
+ইনস্টল করার জন্য:
+1. ZIP Extract করুন।
+2. Windows-এ Node.js LTS ইনস্টল করুন (শুধু build-এর সময়)।
+3. INSTALLER-BUILD.bat Double Click করুন।
+4. dist folder-এ Setup EXE পাবেন।
+5. Setup EXE → Next → Install।
+6. Desktop Shortcut থেকে সফটওয়্যার চালু করুন।
+
+Portable:
+PORTABLE-BUILD.bat চালালে portable EXE হবে।
+
+ব্যবহারের পরে Node.js/npm দরকার হবে না।
+
+ডাটা:
+Windows AppData-তে লোকাল JSON database হিসেবে সংরক্ষিত হবে।
+Backup/Restore দিয়ে data নিরাপদ রাখুন।
