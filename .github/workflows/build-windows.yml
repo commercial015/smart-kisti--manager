@@ -18,7 +18,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
 
       - name: Install dependencies
         run: npm install
@@ -26,9 +25,10 @@ jobs:
       - name: Build Windows Setup
         run: npm run build
 
-      - name: Upload Setup EXE
+      - name: Upload Windows Setup
         uses: actions/upload-artifact@v4
         with:
           name: Smart-Kisti-Manager-Windows-Setup
           path: dist/*.exe
           if-no-files-found: error
+   
